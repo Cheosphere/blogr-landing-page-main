@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;500;600&family=Ubuntu:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="lib/anime.min.js" defer></script>
+  <script src="main.js" defer></script>
+  <title>Blogr Landing Page Main</title>
+</head>
+
+<body>
+  <!-- CONTAINER AREA -->
+  <main class="container">
+    <!-- HEADER AREA -->
+    <header class="header">
+      <div class="header_bg">
+        <div class="header_wrapper">
+          <!-- NAV AREA -->
+          <nav class="header_nav">
+            <figure>
+              <img src="images/logo.svg" alt="logo image">
+            </figure>
+            <!-- MENU AREA -->
+            <span id="menu_mobile" class="menu_mobile_icon"></span>
+            <ul id="header_nav_menu" class="header_nav_menu">
+              <li class="header_nav_menu_item">
+                <a href="#" id="product_btn" class="header_nav_menu_item_link hover_link">Product</a>
+                <picture>
+                  <source srcset="images/icon-arrow-dark.svg" media="(max-width: 860px)">
+                  <img src="images/icon-arrow-light.svg" class="header_nav_menu_item_link_icon" alt="icon arrow">
+                </picture>
+                <!-- <span class="header_product_menu_wrapper">
+                  <ul id="header_product_menu" class="header_product_menu header_submenu">
+                    <li class="header_product_menu_item">
+                      <a href="#" class="header_product_menu_item_link">Overview</a>
+                    </li>
+                    <li class="header_product_menu_item">
+                      <a href="#" class="header_product_menu_item_link">Pricing</a>
+                    </li>
+                    <li class="header_product_menu_item">
+                      <a href="#" class="header_product_menu_item_link">Marketplace</a>
+                    </li>
+                    <li class="header_product_menu_item">
+                      <a href="#" class="header_product_menu_item_link">Features</a>
+                    </li>
+                    <li class="header_product_menu_item">
+                      <a href="#" class="header_product_menu_item_link">Integrations</a>
+                    </li>
+                  </ul>
+                </span> -->
+              </li>
+              <li class="header_nav_menu_item">
+                <a href="#" class="header_nav_menu_item_link hover_link">Company</a>
+                <picture>
+                  <source srcset="images/icon-arrow-dark.svg" media="(max-width: 860px)">
+                  <img src="images/icon-arrow-light.svg" class="header_nav_menu_item_link_icon" alt="icon arrow">
+                </picture>
+                <!-- <span class="header_company_menu_wrapper">
+                  <ul class="header_company_menu header_submenu">
+                    <li class="header_company_menu_item">
+                      <a href="#" class="header_company_menu_item_link">About</a>
+                    </li>
+                    <li class="header_company_menu_item">
+                      <a href="#" class="header_company_menu_item_link">Team</a>
+                    </li>
+                    <li class="header_company_menu_item">
+                      <a href="#" class="header_company_menu_item_link">Blog</a>
+                    </li>
+                    <li class="header_company_menu_item">
+                      <a href="#" class="header_company_menu_item_link">Careers</a>
+                    </li>
+                  </ul>
+                </span> -->
+              </li>
+              <li class="header_nav_menu_item">
+                <a href="#" class="header_nav_menu_item_link hover_link">Connect</a>
+                <picture>
+                  <source srcset="images/icon-arrow-dark.svg" media="(max-width: 860px)">
+                  <img src="images/icon-arrow-light.svg" class="header_nav_menu_item_link_icon" alt="icon arrow">
+                </picture>
+                <!-- <span class="header_connect_menu_wrapper">
+                  <ul class="header_connect_menu header_submenu">
+                    <li class="header_connect_menu_item">
+                      <a href="#" class="header_connect_menu_item_link">Contact</a>
+                    </li>
+                    <li class="header_connect_menu_item">
+                      <a href="#" class="header_connect_menu_item_link">Newsletter</a>
+                    </li>
+                    <li class="header_connect_menu_item">
+                      <a href="#" class="header_connect_menu_item_link">LinkedIn</a>
+                    </li>
+                  </ul>
+                </span> -->
+              </li>
+              <!-- <hr class="divider_menu"> -->
+              <li class="header_nav_menu_item login">
+                <a href="#" class="header_nav_menu_item_link hover_link">Login</a>
+              </li>
+              <li class="header_nav_menu_item sign_up">
+                <a href="#" class="header_nav_menu_item_link">Sign Up</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- CTA AREA -->
+          <section class="header_cta">
+            <h1 class="header_cta_title">A modern publishing platform</h1>
+            <h2 class="header_cta_subtitle">Grow your audience and build your online brand</h2>
+            <div class="header_cta_buttons">
+              <a href="#" class="header_cta_buttons_btn">Start for Free</a>
+              <a href="#" class="header_cta_buttons_btn">Learn More</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </header>
+    <!-- CONTENT DESIGNED AREA -->
+    <article class="content_designed">
+      <h1 class="content_designed_title">Designed for the future</h1>
+      <div class="content_designed_info_wrapper">
+        <section class="content_designed_info">
+          <h2 class="content_designed_info_title">Introducing an extensible editor</h2>
+          <p class="content_designed_info_parag">
+            Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+            The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+            videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+            change the looks of a blog.
+          </p>
+        </section>
+        <section class="content_designed_info">
+          <h2 class="content_designed_info_title">Robust content management</h2>
+          <p class="content_designed_info_parag">
+            Flexible content management enables users to easily move through posts. Increase the usability of your blog
+            by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+          </p>
+        </section>
+      </div>
+      <picture class="content_designed_info_hero">
+        <source srcset="images/illustration-editor-mobile.svg" media="(max-width: 860px)">
+        <img src="images/illustration-editor-desktop.svg" alt="illustration editor"
+          class="content_designed_info_hero_img">
+      </picture>
+    </article>
+    <!-- CONTENT STATE AREA -->
+    <div class="content_state">
+      <div class="content_state_bg">
+        <div class="content_state_wrapper">
+          <figure class="content_state_hero">
+            <img src="images/illustration-phones.svg" alt="illustration phones" class="content_state_hero_img">
+          </figure>
+          <section class="content_state_info">
+            <h2 class="content_state_info_title">State of the Art Infrastructure</h2>
+            <p class="content_state_info_parag">
+              With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
+              connectivity.
+              This ensures your site will load instantly, no matter where your readers are, keeping your site
+              competitive.
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- CONTENT FREE AREA -->
+    <div class="content_free">
+      <picture class="content_free_hero">
+        <source srcset="images/illustration-laptop-mobile.svg" media="(max-width: 860px)">
+        <img src="images/illustration-laptop-desktop.svg" alt="illustration laptop" class="content_free_hero_img">
+      </picture>
+      <div class="content_free_wrapper">
+        <section class="content_free_info">
+          <h2 class="content_free_info_title">Free, open, simple</h2>
+          <p class="content_free_info_parag">
+            Blogr is a free and open source application backed by a large community of helpful developers. It supports
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting
+            tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+        </section>
+        <section class="content_free_info">
+          <h2 class="content_free_info_title">Powerful tooling</h2>
+          <p class="content_free_info_parag">
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a
+            breeze, but capable of producing even the most complicated sites.
+          </p>
+        </section>
+      </div>
+    </div>
+    <!-- FOOTER AREA -->
+    <footer class="footer">
+      <div class="footer_wrapper">
+        <figure class="footer_logo">
+          <img src="images/logo.svg" alt="logo image">
+        </figure>
+        <ul class="footer_product_menu">
+          <li class="footer_product_menu_item">Product</li>
+          <li class="footer_product_menu_item"><a class="footer_connect_menu_item_link hover_link_footer"
+              href="#">Overview</a></li>
+          <li class="footer_product_menu_item"><a class="footer_connect_menu_item_link hover_link_footer"
+              href="#">Pricing</a></li>
+          <li class="footer_product_menu_item"><a class="footer_connect_menu_item_link hover_link_footer"
+              href="#">Marketplace</a></li>
+          <li class="footer_product_menu_item"><a class="footer_connect_menu_item_link hover_link_footer"
+              href="#">Features</a></li>
+          <li class="footer_product_menu_item"><a class="footer_connect_menu_item_link hover_link_footer"
+              href="#">Integrations</a></li>
+        </ul>
+        <ul class="footer_company_menu">
+          <li class="footer_company_menu_item">Company</li>
+          <li class="footer_company_menu_item"><a class="footer_connect_menu_item_link hover_link_footer"
+              href="#">About</a></li>
+          <li class="footer_company_menu_item"><a class="footer_connect_menu_item_link hover_link_footer"
+              href="#">Team</a></li>
+          <li class="footer_company_menu_item"><a class="footer_connect_menu_item_link hover_link_footer"
+              href="#">Blog</a></li>
+          <li class="footer_company_menu_item"><a class="footer_connect_menu_item_link hover_link_footer"
+              href="#">Careers</a></li>
+        </ul>
+        <ul class="footer_connect_menu">
+          <li class="footer_connect_menu_item">Connect</li>
+          <li class="footer_connect_menu_item"><a class="footer_connect_menu_item_link hover_link_footer"
+              href="#">Contact</a></li>
+          <li class="footer_connect_menu_item"><a class="footer_connect_menu_item_link hover_link_footer"
+              href="#">Newsletter</a></li>
+          <li class="footer_connect_menu_item"><a class="footer_connect_menu_item_link hover_link_footer"
+              href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
